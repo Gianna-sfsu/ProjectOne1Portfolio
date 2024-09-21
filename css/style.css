@@ -1,104 +1,76 @@
-/* General Page Styles */
+
 body {
-    font-family: 'Poppins', sans-serif;  /* Changed to a new font (Poppins) */
-    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin:0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
-
-h1 {
-    font-size: 2.5em;
-    margin-top: 20px;
-    color: #333;
-}
-
 p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 20px auto;
-    max-width: 600px; /* Set a max-width to control text container */
-    color: #555;
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 18px ;
+    color:rgb(0, 0, 0);
 }
 
-/* Navigation Styles */
 nav {
-    background-color: #333;
-    padding: 20px 0;
+    background-color: #7bd0fb;
+    padding: 5px 0;
+    text-align: center;
 }
 
 nav a {
     color: #fff;
-    text-decoration: none; /* Removed underline */
-    padding: 10px 30px;
-    margin: 0 20px;
-    font-size: 1.2em;
+    text-decoration: none; 
+    text-transform: uppercase;
+    padding: 0px 40px;
+    margin: 0 30px;
+    font-size: 70px;
     display: inline-block;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 nav a:hover {
-    background-color: #ffcc00;  /* Changed hover color to bright yellow */
-    color: #333;
-    cursor: pointer;
+    background-color: #ff6ae6;  
+    color: #000000;
+    cursor: auto;
 }
 
-/* Flexbox Layout for Home Page */
+
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    max-width: 1200px; /* Set a max-width for the container */
-    margin: 0 auto;    /* Center the container */
-    padding: 0 20px;   /* Add padding for smaller screens */
+    max-width: 1200px; 
+    margin-left: 20px;  
+    padding: 0 50px;   
 }
 
 .container img {
-    max-width: 400px;       /* Limit image width */
-    margin-left: 40px;
-    border-radius: 10px;
+    max-width: 50%;       
+    margin-left: 80%;
+    border-radius: 30px;
 }
 
-.container p {
-    width: 50%;
-}
-
-/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #7bd0fb;
     color: #fff;
-    padding: 20px 0;
-  margin-top: auto;
-    width: 100%;
     text-align: center;
-    font-size: 1.1em;
-}
-container {
-    flex: 1; /* This will push the footer to the bottom */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
 
+}
 footer p {
-    margin: 0;
-    color: #ccc;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+   
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack the image and text on smaller screens */
-        text-align: center;
-    }
+
 
     .container img {
-        margin-left: 0; /* Remove margin so image centers */
+        margin-left: 0; 
         margin-bottom: 20px;
         max-width: 100%; /* Make the image responsive */
     }
@@ -115,5 +87,5 @@ footer p {
     h1 {
         font-size: 2em;
     }
-}
+
 
