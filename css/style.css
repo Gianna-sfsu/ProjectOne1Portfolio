@@ -1,0 +1,119 @@
+/* General Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;  /* Changed to a new font (Poppins) */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px; /* Set a max-width to control text container */
+    color: #555;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; /* Removed underline */
+    padding: 10px 30px;
+    margin: 0 20px;
+    font-size: 1.2em;
+    display: inline-block;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ffcc00;  /* Changed hover color to bright yellow */
+    color: #333;
+    cursor: pointer;
+}
+
+/* Flexbox Layout for Home Page */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 1200px; /* Set a max-width for the container */
+    margin: 0 auto;    /* Center the container */
+    padding: 0 20px;   /* Add padding for smaller screens */
+}
+
+.container img {
+    max-width: 400px;       /* Limit image width */
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.container p {
+    width: 50%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  margin-top: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+container {
+    flex: 1; /* This will push the footer to the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; }
+
+footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the image and text on smaller screens */
+        text-align: center;
+    }
+
+    .container img {
+        margin-left: 0; /* Remove margin so image centers */
+        margin-bottom: 20px;
+        max-width: 100%; /* Make the image responsive */
+    }
+
+    .container p {
+        width: 100%; /* Make text take full width on small screens */
+    }
+
+    nav a {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
