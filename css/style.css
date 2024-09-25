@@ -1,52 +1,79 @@
-
-body {
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: "Poppins", sans-serif;
-    margin:0;
-    padding: 0;
-    background-color: #ffffff;
-}
-p {
-    font-size: 15px;
-    font-weight: 500px;
-    margin: 18px ;
-    color:#7bd0fb;
-    margin-left: 130px;
-    margin-right: 100px;
+    background-color: #f0f4f8; /* Light background */
 }
 
 nav {
     background-color: #7bd0fb;
-    padding: 5px 0;
+    padding: 15px 0;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav a {
     color: #fff;
     text-decoration: none; 
     text-transform: uppercase;
-    padding: 0px 40px;
-    margin: 0 30px;
-    font-size: 20px;
-    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 18px;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
+
 nav a:hover {
     background-color: #ff6ae6;  
-    color: #000000;
-    cursor: auto;
+    color: #000;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px; /* Space around header */
+    background: linear-gradient(135deg, #ff6ae6, #7bd0fb); /* Gradient background for header */
+    color: white;
+    border-bottom: 5px solid #7bd0fb; /* Border for uniqueness */
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    align-items: center;
+    margin: 20px 10%; /* Margin for spacing */
 }
 
 .center-gif {
-   margin-left: 130px;
-   margin-right: 100px;
-   align-content: center;
+    width: 300px; /* Set width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Space between GIF and image */
 }
-.container img {
-    margin-left: 130px;
-    margin-right: 100px;
+
+.side-image {
     border-radius: 30px;
-    height: 20%;
+    height: 500px; /* Keep the height consistent */
+    width: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.text-container {
+    text-align: center; /* Center text */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the text container */
+    font-size: 16px; /* Adjust font size */
+    color: #7bd0fb; /* Darker text color for contrast */
+    padding: 0 20px; /* Padding for inner spacing */
 }
 
 footer {
@@ -54,20 +81,7 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
-
-}
-footer p {
-    color: #ffffff;
-    text-align: center;
     padding: 20px;
-   
+    margin-top: auto; /* Push footer to the bottom */
 }
 
-
-
-   
-
- 
-
-   

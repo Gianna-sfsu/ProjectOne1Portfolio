@@ -1,53 +1,67 @@
-html{ 
-    background-color: #7bd0fb;
+html { 
+    background-color: #7bd0fb; /* Background color for the entire page */
+    height: 100%; /* Ensure full height */
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body covers full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
 nav {
     background-color: #ff64d0; 
     padding: 5px 0;
     text-align: center;
+    width: 100%; /* Ensure nav spans full width */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 nav a {
     color: #fff; 
     text-decoration: none; 
     text-transform: uppercase; 
-    padding: 0px 40px;
-    margin: 0 30px;
+    padding: 0 20px; /* Reduced padding for better responsiveness */
+    margin: 0 15px; /* Reduced margin for better spacing */
     font-size: 20px; 
     display: inline-block;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
-   
-}
-nav a:hover {
-    background-color: #ff8eec;  
-    color: #000000;
-    cursor: auto;
 }
 
-h1{
+nav a:hover {
+    background-color: #ff8eec;  
+    color: #000; /* Color change on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+h1 {
     text-align: center;
     text-transform: uppercase; 
     font-family: "Poppins", sans-serif;
     font-size: 50px;
-    font-weight: 600px;
+    font-weight: 600; /* Corrected font-weight */
     color: white;
 }
+
 h2 {
     text-align: center;
     text-transform: uppercase; 
     font-family: "Poppins", sans-serif;
     font-size: 30px;
-    font-weight: 600px;
+    font-weight: 600; /* Corrected font-weight */
     color: #ff6ae6;
 }
-.food-list, .bucket-list {
+
+.food-list, .bucket-list, .top-pics {
     display: flex; 
     justify-content: center; 
     margin: 20px 0; 
+    flex-wrap: wrap; /* Allow wrapping for better layout */
 }
 
-.food-list div, .bucket-list div {
+.food-list div, .bucket-list div, .top-pics .pic-item {
     text-align: center; 
     margin: 10px; 
 }
@@ -61,22 +75,17 @@ h2 {
     display: block; 
 }
 
-.food-list img, .bucket-list img {
-    width: 100px; 
+.food-list img, .bucket-list img, .top-pics .pic-item img {
+    width: 100px; /* Set width for images */
     height: auto; 
     margin-top: 5px; 
-}
-
-.top-pics {
-    display: flex; 
-    justify-content: center; 
-    margin: 20px 0; 
 }
 
 .top-pics .pic-item {
     margin: 10px; 
     text-align: center; 
-    width: 200px;}
+    width: 200px; /* Set width for pic items */
+}
 
 .top-pics .pic-item img {
     width: 100%; 
@@ -86,25 +95,25 @@ h2 {
 
 .pic-item dd {
     margin-top: 5px; 
-    font-size:12px; 
-    font-weight: 600px;
+    font-size: 12px; 
+    font-weight: 600; /* Corrected font-weight */
     font-style: italic; 
     color: #ff64d0; 
 }
 
-
 footer {
-    background-color:#ff64d0; 
+    background-color: #ff64d0; 
     color: #fff; 
     text-align: center; 
     font-size: 20px; 
     font-family: "Poppins", sans-serif; 
+    width: 100%; /* Ensure footer spans full width */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 footer p {
     color: #ffffff; 
     text-align: center; 
     padding: 25px; 
-  margin-left: 5px;
-  margin-right: 10px;
+    margin: 0; /* Remove margin for better alignment */
 }

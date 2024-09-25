@@ -1,10 +1,26 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: "Poppins", sans-serif;
     text-align: center;
+    background: linear-gradient(to bottom right, #7bd0fb, #ff64d0);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This makes sure the main content pushes the footer down */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
 }
 
 nav {
-    background-color: #7bd0fb;
+    background-color: #ff64d0;
     padding: 5px 0;
 }
 
@@ -20,64 +36,70 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff6ae6;  
+    background-color: #ff8eec;  
     color: #000;
     cursor: auto;
 }
 
- h2 {
-   margin-top: 50px;
+h2 {
+    margin-top: 50px;
     text-transform: uppercase;
     padding: 0 40px;
     font-size: 30px;
     display: inline-block;
     font-weight: bold;
-    color: #ff6ae6;
-
+    color: #ffffff;
+    font-style: bold;
 }
 
 .artist-name {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap; 
-  margin-top: 50px;
-  text-decoration: none;
+    margin-top: 20px; 
 }
 
 .artist {
     text-align: center; 
     margin: 20px; 
     width: 300px; 
-    text-decoration: none;
 }
-
 
 .artist img {
     width: 100%; 
-    height: auto;
-    text-decoration: none;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-h4{
-    color: #7bd0fb;
-    font-family: "Poppins", sans-serif;
-    font-size: 11px;
-    font-weight: 600px;
-    text-align: center;
-    margin: 20px;
 
+.artist-link {
+    color: white; 
+    font-weight: bold; 
+    font-size: 30px; 
+    text-transform: uppercase; 
+    display: block; 
+    margin: 10px 0; 
+    text-decoration: none; 
+}
+
+h4 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: oblique;
+    margin: 10px 0; 
+    padding: 0 10px; 
+    line-height: 1.5;
 }
 
 footer {
-    background-color: #7bd0fb;
+    background-color: #ff64d0; 
     color: #fff;
     text-align: center;
     font-size: 20px;
-    margin-top: 40px;
+    padding: 20px;
+    border-top: 5px solid #fff;
+    width: 100%;
+    margin-top: auto; /* Ensure the footer is always at the bottom */
 }
-
-footer p {
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-}
-
