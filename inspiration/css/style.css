@@ -12,11 +12,11 @@ body {
 }
 
 main {
-    flex: 1; /* This makes sure the main content pushes the footer down */
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: flex-start; /* Align items to the top */
+    flex-direction: column; 
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-start; 
 }
 
 nav {
@@ -70,7 +70,7 @@ h2 {
     height: 300px; 
     object-fit: cover; 
     border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  
 }
 
 .artist-link {
@@ -87,10 +87,11 @@ h4 {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-    font-style: oblique;
+    font-style:normal;
     margin: 10px 0; 
     padding: 0 10px; 
-    line-height: 1.5;
+ justify-content: space-between;
+    justify-content: center;
 }
 
 footer {
@@ -101,5 +102,5 @@ footer {
     padding: 20px;
     border-top: 5px solid #fff;
     width: 100%;
-    margin-top: auto; /* Ensure the footer is always at the bottom */
+    margin-top: auto; 
 }
